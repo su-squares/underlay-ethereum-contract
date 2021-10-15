@@ -8,9 +8,9 @@ interface SuSquares {
 
 /// @title  Personalize your Su Squares that are unpersonalized on the main contract
 /// @author William Entriken (https://phor.net)
-contract SuSquaresUnderlay {
-    SuSquares constant suSquares = SuSquares(0xE9e3F9cfc1A64DFca53614a0182CFAD56c10624F);
-    uint256 constant pricePerSquare = 1e15; // 1 Finney
+contract SuSquaresUnderlay is AccessControlTwoOfficers {
+    SuSquares public constant suSquares = SuSquares(0xE9e3F9cfc1A64DFca53614a0182CFAD56c10624F);
+    uint256 public constant pricePerSquare = 1e15; // 1 Finney
 
     struct Personalization {
         uint256 squareId;
