@@ -6,7 +6,7 @@ interface SuSquares {
     function ownerOf(uint256) external view returns(address);
 }
 
-/// @title  Personalize any Su Squares that are unpersonalized on the main contract
+/// @title  Personalize your Su Squares that are unpersonalized on the main contract
 /// @author William Entriken (https://phor.net)
 contract SuSquaresUnderlay {
     SuSquares constant suSquares = SuSquares(0xE9e3F9cfc1A64DFca53614a0182CFAD56c10624F);
